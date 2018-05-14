@@ -1,0 +1,40 @@
+{
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "node": "8.9.3",
+        "uglify": true
+      },
+      "debug": true,
+      "exclude": ["transform-regenerator", "transform-async-to-generator"],
+      "modules": false,
+      "loose": true
+    }]
+  ],
+  "plugins": [
+    "async-to-promises",
+    "transform-object-rest-spread"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "react",
+        ["env", {
+          "targets": {
+            "node": "8.9.3",
+            "uglify": true
+          },
+          "exclude": ["transform-regenerator", "transform-async-to-generator"],
+          "modules": false,
+          "loose": true,
+        }]
+      ],
+      "plugins": [
+        "async-to-promises",
+        "transform-es2015-modules-commonjs",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}

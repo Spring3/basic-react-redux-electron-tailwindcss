@@ -1,0 +1,9 @@
+{
+  "app.greetings": "Hello",
+  "app.click": "Click",
+  "app.counter": "Counter",
+  "app.change-locale-text": "Change language",
+  "app.react-router-test": "Test react-router",
+  "app.next-page-text": "You are now on a new view",
+  "app.btn-go-home": "Home"
+}
