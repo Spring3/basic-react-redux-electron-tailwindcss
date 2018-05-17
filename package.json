@@ -1,7 +1,7 @@
 {
   "name": "basic-react-redux-electron-tailwindcss",
   "productName": "My App",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "main": "main.js",
   "author": "Daniyil Vasylenko <https://github.com/Spring3>",
