@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const NodeExternals = require('webpack-node-externals');
+const OptimizeCssPlugin = require('optimize-css-assets-webpack-plugin');
 const glob = require('glob-all');
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
@@ -80,6 +81,9 @@ module.exports = {
         compress: true,
         comments: false
       }
+    }),
+    new OptimizeCssPlugin({
+      cssProcessorOptions: { discardComments: { removeAll: true } }
     }),
     new PurgecssPlugin({
       paths: glob.sync([
