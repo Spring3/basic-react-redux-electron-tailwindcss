@@ -18,10 +18,13 @@ The following list of tools was used and configured in this boilerplate:
 - Webpack 3
 - Electron-packager (basic configuration)
 
+
 ## Build an application
 - Set the name of your application in the `package.json` as `productName`.
 - Run `npm run package`
 Feel free to edit the `postpackage` command to include more options or flags for `electron-packager` to match your needs
+
+By default, `--asar` flag is used with `electron-packager`, meaning that after you build your app, you will not be able to check the content of it, because it will be archived and the source code will be hidden. To be able to see the content, remove the `--asar` flag from the `postpackage` command.
 
 ## Dev hot-reload mode
 `npm run dev`

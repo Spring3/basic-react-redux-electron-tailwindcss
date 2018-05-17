@@ -14,7 +14,8 @@
   ],
   "plugins": [
     "async-to-promises",
-    "transform-object-rest-spread"
+    "transform-object-rest-spread",
+    "transform-class-properties"
   ],
   "env": {
     "test": {
@@ -33,7 +34,8 @@
       "plugins": [
         "async-to-promises",
         "transform-es2015-modules-commonjs",
-        "transform-object-rest-spread"
+        "transform-object-rest-spread",
+        "transform-class-properties"
       ]
     }
   }
